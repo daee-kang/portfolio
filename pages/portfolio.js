@@ -11,10 +11,13 @@ export default function Porfolio() {
             <Card
                 title="Today I learned"
                 year="2020"
-                description="A personal dev diary"
+                description="A personal dev wiki"
                 color={'gray'}
+                highlight={"#ffb703"}
                 link="/"
-                image="/images/til.png" />
+                image="/images/til.png"
+                techs={["react", "mongodb", "nodejs"]}
+            />
         </div>
     );
 }

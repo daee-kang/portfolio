@@ -46,17 +46,16 @@
 }
 
 .techs {
-    height: 60px;
-    background-color: green;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .year {
-    color: #ffb703;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 .description {

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '../styles/Card.module.css';
 import Clink from './Clink';
+import DevIcon from 'devicon-react-svg';
 
 export default function Card(
     {
@@ -9,9 +10,16 @@ export default function Card(
         description,
         techs,
         color,
+        highlight,
         link,
         image
     }) {
+
+    const devStyle = {
+        height: '40px',
+        fill: highlight
+    };
+
     return (
         <div
             style={{
@@ -21,7 +29,7 @@ export default function Card(
             <Clink href={link} className={styles.link} style={{ height: '100%' }}>
                 <div className={styles.container}>
                     <div className={styles.info}>
-                        <div className={styles.year}>
+                        <div className={styles.year} style={{ color: highlight }}>
                             {year}
                         </div>
                         <div className={styles.title}>
@@ -31,7 +39,7 @@ export default function Card(
                             {description}
                         </div>
                         <div className={styles.techs}>
-
+                            {techs.map(tech => <DevIcon key={`${tech}-icon`} icon={`${tech}`} style={devStyle} />)}
                         </div>
                     </div>
                     <div className={styles.imageContainer}>
