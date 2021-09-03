@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Clink from '../components/Clink';
 import styles from '../styles/Home.module.css';
+import Div100vh from 'react-div-100vh';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel="preload" href="/fonts/apercuMono.ttf" as="font" crossOrigin="" />
       </Head>
 
-      <main className={styles.main}>
+      <Div100vh className={styles.main}>
         <Image src="/images/memoji.png" alt="me" width="200" height="200" />
         <div className={styles.title}>
           hey, my name is Daee
@@ -40,7 +41,7 @@ export default function Home() {
             resume
           </div>
         </div>
-      </main>
+      </Div100vh>
 
     </div>
   );

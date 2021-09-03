@@ -26,7 +26,7 @@ export default function Card(
         if (width < 800) {
             setHw({ height: 600, width: 660 });
         }
-        if (width < 420) {
+        if (width < 550) {
             setHw({ height: 400, width: 440 });
         }
     }, [width]);
