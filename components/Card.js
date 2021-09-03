@@ -61,6 +61,7 @@ export default function Card(
                                 alt="image"
                                 height={hw.height}
                                 width={hw.width}
+                                priority={true}
                             />
                         </div>
                     </div>

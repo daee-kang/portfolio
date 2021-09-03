@@ -6,7 +6,7 @@ const Icon = ({ icon, className, color }) => {
     const src = icons[name];
 
     if (src) {
-        return <Image className={className} title={icon} src={src} alt={icon} height={40} width={50} />;
+        return <Image className={className} title={icon} src={src} alt={icon} height={40} width={50} priority={true} />;
     }
 
     return null;

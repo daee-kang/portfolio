@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <Div100vh className={styles.main}>
-        <Image src="/images/memoji.png" alt="me" width="200" height="200" />
+        <Image src="/images/memoji.png" alt="me" width="200" height="200" priority={true} />
         <div className={styles.title}>
           hey, my name is Daee
         </div>
