@@ -101,7 +101,8 @@ export default function Porfolio() {
                     I graduated from University of Nevada Las Vegas in 2020 and I&lsquo;m ready for any and all
                     opportunities.
                 </p>
-                <div className={styles.title} style={{ marginTop: 80 }}>
+                <div style={{ borderBottom: '1px solid rgb(216, 215, 215)', marginTop: 60 }} />
+                <div className={styles.title} style={{ marginTop: 40 }}>
                     Anyways, here are a couple of things I have been working on:
                 </div>
             </div>
@@ -124,6 +125,10 @@ export default function Porfolio() {
                         />;
                     })
                 }
+            </div>
+
+            <div className={styles.backtop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                back to the top
             </div>
         </div >
     );

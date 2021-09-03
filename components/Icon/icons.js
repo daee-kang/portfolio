@@ -9,6 +9,8 @@ import threejs from './threejs.svg';
 import typescript from './typescript.svg';
 import nextjs from './nextjs.svg';
 import swift from './swift.svg';
+import github from './github.svg';
+import linkedin from './linkedin.svg';
 
 const icons = {
     css,
@@ -21,7 +23,9 @@ const icons = {
     threejs,
     typescript,
     nextjs,
-    swift
+    swift,
+    github,
+    linkedin
 };
 
 export default icons;

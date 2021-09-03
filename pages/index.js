@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Clink from '../components/Clink';
 import styles from '../styles/Home.module.css';
 import Div100vh from 'react-div-100vh';
+import Icon from '../components/Icon';
 
 export default function Home() {
   return (
@@ -32,9 +33,18 @@ export default function Home() {
             portfolio
           </Clink>
 
-          <div>
+          <a href="/Resume.pdf" download>
             resume
-          </div>
+          </a>
+        </div>
+
+        <div className={styles.socials}>
+          <a href="http://www.github.com/daee-kang">
+            <Icon icon="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/daee-kang-270136183/">
+            <Icon icon="linkedin" />
+          </a>
         </div>
       </Div100vh>
 
