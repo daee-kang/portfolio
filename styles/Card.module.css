@@ -7,10 +7,12 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: ease-in-out 0.2s;
     cursor: pointer;
+    margin-top: 50px;
 }
-
-.card:hover {
-    transform: scale(1.02);
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        transform: scale(1.02);
+    }
 }
 
 .container {
@@ -26,13 +28,14 @@
     flex: 1;
     padding: 50px;
     height: 100%;
+    width: 300px;
 }
 
 .imageContainer {
     display:flex;
     height: 100%;
-    width: 100%;
-    border-radius: 0px 5px 5px 0px;
+    width: 50%;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -40,8 +43,8 @@
     position: relative;
     margin-top: 5%;
     height: 90%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5px;
+    border-radius: 8px 0px 0px 8px;
+    overflow: hidden;
     flex: 1;
 }
 
@@ -68,12 +71,17 @@
     height: 100%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 680px) {
     .card {
         height: 800px;
         width: 90%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
+    .info {
+        width: 100%;
+    }
+
     .container {
 
         flex-direction: column;
@@ -82,15 +90,35 @@
     .imageContainer {
         max-width: none;
         max-height: none;
+        width: 100%;
     }
 
     .image {
         margin-left: 50px;
         height: 750px;
+        width: 100%;
         min-width: 1000px;
         max-height: none;
         max-width: none;
         border-radius: 5px;
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        height: 600px;
+    }
+
+    .year {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        font-size: .8rem;
     }
 }

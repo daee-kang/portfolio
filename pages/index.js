@@ -12,7 +12,6 @@ export default function Home() {
         <meta name="description" content="Daee Kang Porfolio" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/fonts/apercuMono.ttf" as="font" crossOrigin="" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </Head>
 
       <main className={styles.main}>
