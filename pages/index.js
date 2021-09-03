@@ -24,15 +24,10 @@ export default function Home() {
           I&lsquo;m a software engineer
         </div>
         <div className={styles.subtitle}>
-          and I do other things too
+          I do other things too
         </div>
 
         <div className={styles.links}>
-
-          <Clink href="/about" className={styles.link}>
-            about me
-          </Clink>
-
           <Clink href="/portfolio" className={styles.link}>
             portfolio
           </Clink>
