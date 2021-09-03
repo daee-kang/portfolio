@@ -8,6 +8,7 @@ import sass from './sass.svg';
 import threejs from './threejs.svg';
 import typescript from './typescript.svg';
 import nextjs from './nextjs.svg';
+import swift from './swift.svg';
 
 const icons = {
     css,
@@ -19,7 +20,8 @@ const icons = {
     sass,
     threejs,
     typescript,
-    nextjs
+    nextjs,
+    swift
 };
 
 export default icons;

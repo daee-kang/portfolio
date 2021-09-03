@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1rem;
+  color: rgb(52, 52, 52);
+}
+
 * {
   box-sizing: border-box;
 }

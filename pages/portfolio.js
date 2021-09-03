@@ -4,8 +4,19 @@ import styles from '../styles/Home.module.css';
 export default function Porfolio() {
     return (
         <div>
-            <div className={styles.title}>
-                Here are a couple of things I have been working on:
+            <div className={styles.aboutme}>
+                <div className={styles.aboutmetext}>
+                    <p>
+                        Hey, my name is <span style={{ color: '#fca311', fontSize: '2rem', textDecoration: 'underline' }}>Daee Kang</span> and I&lsquo;m a software engineer. I currently expertise
+                        in react and react native development, although I have experience with C++,C#.
+                        I love working with new frameworks and creating things that are fun to look at and use.
+                        I graduated from University of Nevada Las Vegas in 2020 and I&lsquo;m ready for any and all
+                        opportunities.
+                    </p>
+                    <div className={styles.title} style={{ marginTop: 80 }}>
+                        Anyways, here are a couple of things I have been working on:
+                    </div>
+                </div>
             </div>
 
             <Card
@@ -61,6 +72,17 @@ export default function Porfolio() {
                 link="/"
                 image="/images/til.png"
                 techs={["react", "javascript", "mongodb", "nodejs"]}
+            />
+
+            <Card
+                title="Simple stock profit calc"
+                year="2020"
+                description="A simple app to calculate potential stock market earnings made with SwiftUI"
+                color={'#447a9c'}
+                highlight={"#ee6b4d"}
+                link="/"
+                image="/images/stockapp.png"
+                techs={["swift"]}
             />
 
             <Card

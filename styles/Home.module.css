@@ -27,3 +27,23 @@
   cursor: pointer;
   margin: 10px;
 }
+
+.aboutme {
+  font-size: 1.5rem;
+  margin-top: 100px;
+  padding-bottom: 60px;
+  margin: 100px auto auto auto;
+  width: 98%;
+  border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+.aboutmetext {
+  width: 800px;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutmetext {
+    width: 90%;
+  }
+}

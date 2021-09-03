@@ -3,6 +3,7 @@ import styles from '../styles/Card.module.css';
 import Clink from './Clink';
 import Icon from '../components/Icon';
 import useWindowDimensions from '../hooks/useWindowDimensions';
+import { useEffect, useState } from 'react';
 
 export default function Card(
     {
@@ -18,6 +19,17 @@ export default function Card(
     }) {
 
     const { width } = useWindowDimensions();
+    const [hw, setHw] = useState({ height: 500, width: 550 });
+
+
+    useEffect(() => {
+        if (width < 800) {
+            setHw({ height: 600, width: 660 });
+        }
+        if (width < 420) {
+            setHw({ height: 400, width: 440 });
+        }
+    }, [width]);
 
     return (
         <div
@@ -47,8 +59,8 @@ export default function Card(
                             <Image
                                 src={image}
                                 alt="image"
-                                height={width < 500 ? 300 : 500}
-                                width={width < 500 ? 330 : 550}
+                                height={hw.height}
+                                width={hw.width}
                             />
                         </div>
                     </div>
