@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 
 const Clink = ({ children, href, passHref, className }) => (
     <div className={className}>
-        <Link href={href} passHref={passHref} scroll={false}>
+        <Link href={href} passHref={passHref}>
             {children}
         </Link>
     </div>
