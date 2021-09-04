@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import Head from 'next/head';
 import Card from '../../components/Card';
 import Clink from '../../components/Clink';
 import styles from '../../styles/Home.module.css';
@@ -7,6 +7,16 @@ import cards from '../../components/portdata';
 export default function Porfolio() {
     return (
         <div>
+            <Head>
+                <title>My Projects and stuff</title>
+                <meta name="description" content="Daee Kang Portfolio" />
+                <meta property="og:title" content="Daee Kang Portfolio" />
+                <meta property="og:description" content="Daee Kang Portfolio" />
+                <meta property="og:url" content="http://daee.dev/" />
+                <meta property="og:type" content="website" />
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="preload" href="/fonts/apercuMono.ttf" as="font" crossOrigin="" />
+            </Head>
             <div className={styles.aboutme}>
                 <Clink className={styles.back} href="/">
                     ← back
