@@ -1,5 +1,7 @@
 import styles from './Portfolio.module.css';
 import Head from 'next/head';
+import Clink from '../Clink';
+import Back from '../Back';
 
 export default function PortfolioLayout(
     {
@@ -20,7 +22,11 @@ export default function PortfolioLayout(
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preload" href="/fonts/apercuMono.ttf" as="font" crossOrigin="" />
             </Head>
-            {children}
+
+            <div className={styles.body}>
+                <Back href="/portfolio" />
+                {children}
+            </div>
         </div>
     );
 }

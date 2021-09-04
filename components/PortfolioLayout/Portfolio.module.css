@@ -1,0 +1,29 @@
+.body {
+    width: 800px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.link {
+    color:#fca311;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .body {
+        width: 90%;
+    }
+}

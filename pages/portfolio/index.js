@@ -3,6 +3,7 @@ import Card from '../../components/Card';
 import Clink from '../../components/Clink';
 import styles from '../../styles/Home.module.css';
 import cards from '../../components/portdata';
+import Back from '../../components/Back';
 
 export default function Porfolio() {
     return (
@@ -18,9 +19,7 @@ export default function Porfolio() {
                 <link rel="preload" href="/fonts/apercuMono.ttf" as="font" crossOrigin="" />
             </Head>
             <div className={styles.aboutme}>
-                <Clink className={styles.back} href="/">
-                    ← back
-                </Clink>
+                <Back href="/" />
                 <p>
                     Hey, my name is <span style={{ color: '#fca311', fontSize: '2rem', textDecoration: 'underline' }}>Daee Kang</span> and I&lsquo;m a software engineer. I currently expertise
                     in react and react native development, although I have experience with C++,C#.
