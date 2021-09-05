@@ -2,6 +2,7 @@ import styles from './Portfolio.module.css';
 import Head from 'next/head';
 import Clink from '../Clink';
 import Back from '../Back';
+import Image from 'next/dist/client/image';
 
 export default function PortfolioLayout(
     {
@@ -26,6 +27,25 @@ export default function PortfolioLayout(
             <div className={styles.body}>
                 <Back href="/portfolio" />
                 {children}
+            </div>
+
+            <div>
+                <div className={styles.imageContainer}>
+                    <Image src="/images/devblog/home.png" alt="home" height={1000} width={1100} layout="responsive" className={styles.image} />
+                </div>
+                <div className={styles.imageContainer}>
+                    <Image src="/images/devblog/posts.png" alt="posts" height={1000} width={1100} layout="responsive" className={styles.image} />
+                </div>
+                <div className={styles.imageContainer}>
+                    <Image src="/images/devblog/title.png" alt="title" height={1000} width={1100} layout="responsive" className={styles.image} />
+                </div>
+                <div className={styles.imageContainer}>
+                    <Image src="/images/devblog/body.png" alt="body" height={1000} width={1100} layout="responsive" className={styles.image} />
+                </div>
+            </div>
+
+            <div className={styles.backtop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                back to the top
             </div>
         </div>
     );
