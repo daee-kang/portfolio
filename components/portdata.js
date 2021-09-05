@@ -5,7 +5,7 @@ const cards = [
         description: "Polling app based on geographical location written in React Native",
         color: '#763AFF',
         highlight: '#0DCD94',
-        link: "/",
+        link: "/portfolio/pollio",
         image: '/images/pollio.png',
         techs: ["react", "typescript", "mongodb", "nodejs"]
     },
@@ -15,7 +15,7 @@ const cards = [
         description: "I mean I guess this portfolio counts as a project... right?",
         color: '#fca311',
         highlight: 'black',
-        link: "/",
+        link: "/portfolio/thissite",
         image: '/images/portfolio.png',
         techs: ["nextjs", "javascript"]
     },
@@ -35,7 +35,7 @@ const cards = [
         description: "Typeracer clone but for numbers, numpad racer basically (that probably is a better name)",
         color: '#40916c',
         highlight: "#ffba08",
-        link: "/",
+        link: "/portfolio/numbrr",
         image: '/images/numbrr.png',
         techs: ["react", "typescript"]
     },
@@ -45,7 +45,7 @@ const cards = [
         description: "A personal dev wiki",
         color: '#003049',
         highlight: "#ffb703",
-        link: "/",
+        link: "/portfolio/til",
         image: "/images/til.png",
         techs: ["react", "javascript", "mongodb", "nodejs"]
     },

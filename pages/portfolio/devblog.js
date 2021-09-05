@@ -3,7 +3,17 @@ import styles from '../../components/PortfolioLayout/Portfolio.module.css';
 
 export default function devBlog() {
     return (
-        <PortfolioLayout title="dev blog">
+        <PortfolioLayout
+            title="dev blog"
+            imagestub="devblog"
+            images={[
+                "home",
+                "posts",
+                "title",
+                "body"
+            ]}
+            techs={["nextjs", "typescript"]}
+        >
             <div className={styles.title}>
                 Dev Blog
             </div>
@@ -21,7 +31,10 @@ export default function devBlog() {
                 {`
                 I also wanted to learn next.js and really a development blog was the perfect example to
                 use it for. I learned about SEO and content management as well, it's also been set up on
-                netlify for continuous integration. It's also fast as heck.  
+                netlify for continuous integration. It's also fast as heck. Continuous integration became 
+                key for this site as that's how updating content works for this site, I ended up using netlify
+                CMS which allows me to login with my github and create pull requests with new content and it 
+                will automatically deploy.
                 `}
             </div>
 
@@ -32,9 +45,16 @@ export default function devBlog() {
                 `}
             </div>
 
-            <a href="https://daeedev.netlify.app/" className={styles.link}>
-                Visit website →
-            </a>
+            <div>
+                <a href="https://daeedev.netlify.app/" className={styles.link}>
+                    Visit website →
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/daee-kang/dev-blog" className={styles.githublink}>
+                    View it on github →
+                </a>
+            </div>
         </PortfolioLayout>
     );
 }

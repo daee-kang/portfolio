@@ -1,14 +1,16 @@
 import styles from './Portfolio.module.css';
 import Head from 'next/head';
-import Clink from '../Clink';
 import Back from '../Back';
 import Image from 'next/dist/client/image';
+import Icon from '../Icon';
 
 export default function PortfolioLayout(
     {
         children,
         title,
-        images
+        imagestub,
+        images,
+        techs
     }
 ) {
     return (
@@ -26,22 +28,21 @@ export default function PortfolioLayout(
 
             <div className={styles.body}>
                 <Back href="/portfolio" />
+                <div className={styles.techs}>
+                    {techs.map(tech => <Icon key={`${tech}-icon`} icon={`${tech}`} />)}
+                </div>
+                <div>
+
+                </div>
                 {children}
             </div>
 
             <div>
-                <div className={styles.imageContainer}>
-                    <Image src="/images/devblog/home.png" alt="home" height={1000} width={1100} layout="responsive" className={styles.image} />
-                </div>
-                <div className={styles.imageContainer}>
-                    <Image src="/images/devblog/posts.png" alt="posts" height={1000} width={1100} layout="responsive" className={styles.image} />
-                </div>
-                <div className={styles.imageContainer}>
-                    <Image src="/images/devblog/title.png" alt="title" height={1000} width={1100} layout="responsive" className={styles.image} />
-                </div>
-                <div className={styles.imageContainer}>
-                    <Image src="/images/devblog/body.png" alt="body" height={1000} width={1100} layout="responsive" className={styles.image} />
-                </div>
+                {images.map(image => {
+                    return <div className={styles.imageContainer} key={`port-${image}`}>
+                        <Image src={`/images/${imagestub}/${image}.png`} alt={image} height={1000} width={1100} layout="responsive" className={styles.image} />
+                    </div>;
+                })}
             </div>
 
             <div className={styles.backtop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

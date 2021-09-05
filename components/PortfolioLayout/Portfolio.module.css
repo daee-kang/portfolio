@@ -22,6 +22,12 @@
     font-size: 1.2rem;
 }
 
+.githublink {
+    color: #023e8a;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 
 .imageContainer {
     display: block; 
@@ -36,6 +42,10 @@
 
 .image {
     border-radius: 7px;
+}
+
+.techs {
+    margin-top: 40px;
 }
 
 @media (hover: hover) and (pointer: fine) {
