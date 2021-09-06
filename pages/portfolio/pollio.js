@@ -20,10 +20,7 @@ export default function pollio() {
 
             <div className={styles.description}>
                 {`
-                I've making dives into mobile development for the past 2 years, starting with Swift to SwiftUI and I've been 
-                mastering React Native as of recently. A lot of my projects in the past have been small tiny projects 
-                with the purpose of helping me learn the frameworks but this has been an app that I have been working over the 
-                past year. Poll.io is an a polling app that lets users query and vote for polls only around their geographical location.
+                Poll.io is a polling app that lets users query and vote for polls only around their geographical location.
                 The foundation of this app is to inspire people to vote in their local communities.
                 `}
             </div>
@@ -39,7 +36,7 @@ export default function pollio() {
 
             <div className={styles.description}>
                 {`
-                So yeah, I have a working prototype but it's not the best looking right now 😬, but the final product will be coming out
+                I have a working prototype but it's not the best looking right now 😬, but the final product will be coming out
                 soon.
                 `}
             </div>
