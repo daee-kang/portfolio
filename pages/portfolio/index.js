@@ -29,14 +29,14 @@ export default function Porfolio() {
                 </p>
                 <div style={{ borderBottom: '1px solid rgb(216, 215, 215)', marginTop: 60 }} />
                 <div className={styles.title} style={{ marginTop: 40 }}>
-                    Anyways, here are a couple of things I have been working on:
+                    Anyways, here are a couple of notable things I have worked on:
                 </div>
             </div>
 
             <div className={styles.cardContainer}>
                 {
 
-                    cards.map((card, index) => {
+                    cards.map(card => {
                         return <Card
                             title={card.title}
                             year={card.year}

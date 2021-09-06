@@ -55,7 +55,7 @@ const cards = [
         description: "A simple app to calculate potential stock market earnings made with SwiftUI",
         color: '#447a9c',
         highlight: "#ee6b4d",
-        link: "/",
+        link: "/portfolio/stockcalc",
         image: "/images/stockapp.png",
         techs: ["swift"]
     },
@@ -66,7 +66,7 @@ const cards = [
         color: 'rgb(255, 226, 226)',
         text: "rgb(26, 166, 183)",
         highlight: "rgb(255, 105, 97)",
-        link: "/",
+        link: "/portfolio/pathfinder",
         image: "/images/pathfinder.png",
         techs: ["react", "javascript"],
     },
@@ -77,9 +77,9 @@ const cards = [
         color: 'rgb(145, 252, 145)',
         highlight: 'black',
         text: "#366387",
-        link: "/",
+        link: "/portfolio/parkinn",
         image: "/images/parkinn.png",
-        techs: ["react", "javascript"]
+        techs: ["react", "javascript", "nodejs", "mongodb"]
     },
     {
         title: "sort",
@@ -87,7 +87,7 @@ const cards = [
         description: "A react website for visualizing sorting algorithms like those cool youtube videos :-)",
         color: 'black',
         highlight: "#2a9d8f",
-        link: "/",
+        link: "/portfolio/sort",
         image: "/images/sort.png",
         techs: ["react", "javascript"]
     }
